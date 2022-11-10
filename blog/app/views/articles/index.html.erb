@@ -1,0 +1,12 @@
+<h1>This is the program</h1>
+<ul>
+  <% @articles.each do |article|%>
+    <li>
+      <!--<a href="/articles/<%= article.id%>">-->
+      <strong><%= article.title%></strong></a>
+    </li>
+<p><%= article.content %></p>
+<%= link_to article.title, article%>
+<%= link_to "New",articles_new_path %>-->
+<% end %>
+</ul>
